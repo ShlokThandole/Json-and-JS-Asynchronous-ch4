@@ -1,0 +1,12 @@
+<html>
+    <body>
+    <h1>json</h1>
+    <p id="smite"></p>
+    <script>
+        var myObj = { name : "shlok" , age : 13 , grade : 8 };
+        var myJSON = JSON.stringify(myObj);
+        var newObj = JSON.parse(myJSON);
+        document.getElementById("smite").innerHTML = newObj.age;
+    </script>
+        </body>
+</html>

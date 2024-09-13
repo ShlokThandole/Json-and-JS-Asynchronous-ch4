@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>asynchronous</h1>
+        <p id="why"></p>
+        <script>
+            async function add(a,b){
+                let response = await a+b ;
+                display(response);
+            }
+            function display(sum){
+                document.getElementById("why").innerHTML = sum;
+            }
+            add(97,65);
+        </script>
+    </body>
+</html>
